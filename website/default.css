@@ -592,12 +592,40 @@
 		overflow: hidden;
 	}
 	
+/*
+  #portfolio a
+  {
+    color: rgba(0,0,0,0.5);
+    text-decoration: none
+  }
+*/
+  
+/*
+  #portfolio a:hover
+  {
+    color: rgba(255,255,255,1);
+    text-decoration: none
+  }
+*/
+  
 	#portfolio .box
 	{
-		padding: 1em 2em 1em 1em;
+		padding: 1em 1em 1em 1em;
 		text-align: center;
 		color: rgba(0,0,0,0.5);
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
 	}
+  #portfolio .box:hover {
+    border-radius: 10px;
+    background: #dddddd;
+    color: rgba(200,200,200,0.5);
+  }
 	
 	#portfolio h3
 	{
@@ -693,3 +721,31 @@
 		padding-right: 0.50em;
 	}
 	
+  .button-link {
+    padding: 10px 15px;
+    color: #888;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+  }
+  .button-link:hover {
+      
+      background: #356094;
+      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+      text-decoration: none;
+      color: #FFF;
+  }
+  .button-link:hover a{
+      color: #FFF;
+  }
+  .button-link a{
+    color: rgba(0,0,0,0.75);
+    text-decoration: none
+  }
+
