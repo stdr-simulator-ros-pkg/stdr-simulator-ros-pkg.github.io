@@ -34,7 +34,7 @@
 	
 	p
 	{
-		line-height: 180%;
+		line-height: 100%;
 	}
 	
 	strong
@@ -55,7 +55,7 @@
 	.container
 	{
 		margin: 0px auto;
-		width: 1200px;
+		width: 95%;
 	}
 	
 
@@ -430,6 +430,15 @@
 /*********************************************************************************/
 /* Wrapper                                                                       */
 /*********************************************************************************/
+  #content_description,
+  #content_download,
+  #content_multimedia,
+  #content_tutorials,
+  #content_contribute,
+  #content_contact
+	{
+		background: #EDEDED;
+	}
 
 	#wrapper1
 	{
@@ -574,7 +583,7 @@
 	
 	#newsletter .content
 	{
-		width: 600px;
+		width: 95%;
 		margin: 0px auto;
 	}
 	
@@ -612,7 +621,7 @@
 	{
 		padding: 1em 1em 1em 1em;
 		text-align: center;
-		color: rgba(0,0,0,0.5);
+		color: rgba(255,255,255,0.5);
     -webkit-transition-duration: 0.4s;
     -moz-transition-duration: 0.4s;
     transition-duration: 0.4s;
@@ -623,19 +632,19 @@
 	}
   #portfolio .box:hover {
     border-radius: 10px;
-    background: #dddddd;
-    color: rgba(200,200,200,0.5);
+    background: rgba(0,0,0,0.5);
+    color: rgba(0,0,0,0.5);
   }
 	
 	#portfolio h3
 	{
 		display: block;
-		margin-bottom: 1em;
-		padding-bottom: 1em;
+		margin-top: 1em;
+		padding-top: 1em;
 		border-bottom: 1px solid rgba(0,0,0,0.1);
 		text-transform: uppercase;
 		font-size: 1em;
-		color: rgba(0,0,0,0.6);
+		color: rgba(255,255,255,0.6);
 	}
 
 	#portfolio .title
@@ -661,7 +670,7 @@
 	.column3,
 	.column4
 	{
-		width: 282px;
+		width: 23%;
 	}
 	
 	.column1,
@@ -675,7 +684,7 @@
 	
 	.column4
 	{
-		float: right;
+		float: left;
 	}
 	
 /*********************************************************************************/
@@ -745,7 +754,7 @@
       color: #FFF;
   }
   .button-link a{
-    color: rgba(0,0,0,0.75);
+    color: rgba(255,255,255,0.75);
     text-decoration: none
   }
 
