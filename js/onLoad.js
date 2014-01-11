@@ -71,4 +71,6 @@ $(document).ready(function() {
       });
       return false;
   });
+  
+  $("a[rel^='prettyPhoto']").prettyPhoto({slideshow:3000, autoplay_slideshow:true});
 } );

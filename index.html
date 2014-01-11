@@ -17,13 +17,15 @@ Released   : 20131203
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
-  <link href="default.css" rel="stylesheet" type="text/css" media="all" />
-  <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/default.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+  
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+  <script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
   
   <link rel="shortcut icon" href="favicon.ico" type="image/icp">
 
-  <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
-  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
   <script src="js/onLoad.js" type="text/javascript"></script>
   
 </head>
@@ -40,7 +42,7 @@ Released   : 20131203
         </td>
         <td  align='center' width='50%'>
           <div id="logo">
-            <a href="#"><img src='images/logo.png'/ width='300px'></a>
+            <a href="#"><img src='images/logo.png'/ width='150px'></a>
           </div>
         </td>
       </tr>
@@ -54,54 +56,54 @@ Released   : 20131203
           <div class="column1"  align='center'>
             <div class="box"> 
               <span>
-                <img src='images/logo.png'/ width='70px'>
+                <img src='images/logo.png'/ width='60px'>
               </span>
-              <h3>What is STDR?</h3>
+              <h3>What is STDR?</h3><br>
               <p class='button-link'><a href='#' id='description_id'>General description</a></p>
             </div>
           </div>
           <div class="column2">
-            <div class="box"> <span><img src='images/ros_enabled.png'/ width='70px'></span>
-              <h3>Is STDR in ROS ecosystem?</h3>
+            <div class="box"> <span><img src='images/ros_enabled.png'/ width='60px'></span>
+              <h3>Is STDR in ROS ecosystem?</h3><br>
               <p class='button-link'><a href="http://wiki.ros.org/stdr_simulator" target="_blank">Official ROS wiki page</a></p>
             </div>
           </div>
           <div class="column3">
-            <div class="box"> <span><img src='images/download.png'/ width='70px'></span>
-              <h3>How can I download it?</h3>
+            <div class="box"> <span><img src='images/download.png'/ width='60px'></span>
+              <h3>How can I download it?</h3><br>
               <p class='button-link'><a href='#' id='download_id'>Ways to get STDR Simulator</a></p>
             </div>
           </div>
           <div class="column4">
-            <div class="box"> <span><img src='images/look.png'/ width='70px'></span>
-              <h3>What does it look like?</h3>
-              <p class='button-link'><a href='#' id='multimedia_id'>Multimedia</a></p>
+            <div class="box"> <span><img src='images/look.png'/ width='60px'></span>
+              <h3>What does it look like?</h3><br>
+              <p class='button-link'><a href='#' id='multimedia_id'>Gallery</a></p>
             </div>
           </div>
         </div>
         <hr>
         <div class="pbox2">
           <div class="column1">
-            <div class="box"> <span class="icon icon-cogs"></span>
-              <h3>How can I use it?</h3>
+            <div class="box"> <span><img src='images/pignon.png'/ width='60px'></span>
+              <h3>How can I use it?</h3><br>
               <p class='button-link'><a href='#' id='tutorials_id'>Tutorials</a></p>
             </div>
           </div>
           <div class="column2">
-            <div class="box"> <span><img src='images/contribute.png'/ width='70px'></span>
-              <h3>How can I help?</h3>
+            <div class="box"> <span><img src='images/contribute.png'/ width='60px'></span>
+              <h3>How can I help?</h3><br>
               <p class='button-link'><a href='#' id='contribute_id'>Ways to contribute</a></p>
             </div>
           </div>
           <div class="column3">
-            <div class="box"> <span><img src='images/contact.png'/ width='70px'></span>
-              <h3>How can I contact you?</h3>
+            <div class="box"> <span><img src='images/contact.png'/ width='60px'></span>
+              <h3>How can I contact you?</h3><br>
               <p class='button-link'><a href='#' id='contact_id'>Contact information</a></p>
             </div>
           </div>
           <div class="column4">
             <div class="box"> 
-              <h3>Do you use STDR Simulator?</h3>
+              <h3>Do you use STDR Simulator?</h3><br>
               <p><script type="text/javascript" src="http://www.ohloh.net/p/712579/widgets/project_users.js?style=green"></script></script></p>
             </div>
           </div>
@@ -128,6 +130,8 @@ Released   : 20131203
             </h3>
             <br>
             <p style="text-align: justify;">STDR Simulator is created in way that makes it totally ROS compliant. Every robot and sensor emmits a ROS transformation (tf) and all the measurements are published in ROS topics. In that way, STDR uses all ROS adventages, aiming at easy usage with the world's most state-of-the-art robotic framework. The ROS compliance also suggests that the Graphical User Interface and the STDR Server can be executed in different machines, as well as that STDR can work together with ROS Rviz!</p>
+            <br>
+            <img src='images/img6.png' width='500px' border='1'/>
           </div>
         </div>
       </div>
@@ -152,37 +156,16 @@ Released   : 20131203
         <div id="welcome" class="container">
           <div class="title">
             <h2>What does it look like?</h2><br>
-            <span class="byline">Multimedia</span> </div>
+            <span class="byline">Gallery</span> </div>
           <div class="content">
-            <h3 style="text-align: justify;">
-              STDR GUI with a loaded map
-            </h3><br>
-            <img src='images/img1.png' width='600px' border='1'/>
-            <br><br>
-            <h3 style="text-align: justify;">
-              STDR GUI with one loaded robot, equipped with a laser and five sonar sensors
-            </h3><br>
-            <img src='images/img2.png' width='600px' border='1'/>
-            <br><br>
-            <h3 style="text-align: justify;">
-              Screenshot of the STDR GUI robot creator
-            </h3><br>
-            <img src='images/img3.png' width='600px' border='1'/>
-            <br><br>
-            <h3 style="text-align: justify;">
-              Zoom in to a single robot, showcasing proximity circles and grid existance
-            </h3><br>
-            <img src='images/img4.png' width='600px' border='1'/>
-            <br><br>
-            <h3 style="text-align: justify;">
-              Robot and sensors topic visualization
-            </h3><br>
-            <img src='images/img5.png' width='600px' border='1'/>
-            <br><br>
-            <h3 style="text-align: justify;">
-              Two robots spawned with different visualization status
-            </h3><br>
-            <img src='images/img6.png' width='600px' border='1'/>
+
+            <a href="images/img1.png" rel="prettyPhoto[pp_gal]" title="STDR GUI with a loaded map."><img src='images/img1.png' height='100px' border='1'/></a>
+            <a href="images/img2.png" rel="prettyPhoto[pp_gal]" title="STDR GUI with one loaded robot, equipped with a laser and five sonar sensors."><img src='images/img2.png' height='100px' border='1'/></a>
+            <a href="images/img3.png" rel="prettyPhoto[pp_gal]" title="Screenshot of the STDR GUI robot creator."><img src='images/img3.png' height='100px' border='1'/></a>
+            <a href="images/img4.png" rel="prettyPhoto[pp_gal]" title="Zoom in to a single robot, showcasing proximity circles and grid existance."><img src='images/img4.png' height='100px' border='1'/></a>
+            <a href="images/img5.png" rel="prettyPhoto[pp_gal]" title="Robot and sensors topic visualization."><img src='images/img5.png' height='100px' border='1'/></a>
+            <a href="images/img6.png" rel="prettyPhoto[pp_gal]" title="Two robots spawned with different visualization status."><img src='images/img6.png' height='100px' border='1'/></a>
+
           </div>
         </div>
       </div>
@@ -243,7 +226,7 @@ Released   : 20131203
             <span class="byline">Contact information</span> </div>
           <div class="content">
             <p style="text-align: justify;">
-              Our e-mail is stdr.simulator [at] gmail [dot] com. We also have a google group, so if you're interested in participating more actively, please send us an e-mail to let you in! Looking forward to hear from you :) 
+              Our e-mail is <b><u>stdr.simulator [at] gmail [dot] com</u></b>. We also have a google group, so if you're interested in participating more actively, please send us an e-mail to let you in! Looking forward to hear from you :) 
             </p>
           </div>
         </div>
@@ -267,11 +250,27 @@ document.write("<sc"+"ript type='text/javascript' src='" +
 scJsHost+
 "statcounter.com/counter/counter.js'></"+"script>");
 </script>
-<noscript><div class="statcounter" align='center'><a title="web counter"
+<noscript><div class="statcounter" align='center'  style="display:none"><a title="web counter"
 href="http://statcounter.com/free-hit-counter/"
 target="_blank"><img class="statcounter"
 src="http://c.statcounter.com/9532404/0/58c3e097/0/"
 alt="web counter"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide --><!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=9532404; 
+var sc_invisible=1; 
+var sc_security="58c3e097"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="hits counter"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/9532404/0/58c3e097/1/"
+alt="hits counter"></a></div></noscript>
 <!-- End of StatCounter Code for Default Guide -->
 
 </body>
