@@ -7,7 +7,9 @@ $(document).ready(function() {
       $('#content_contribute').slideUp('slow', function() {});
       $('#content_contact').slideUp('slow', function() {});
       $('#content_description').slideDown('slow', function() {
-        //~ $(document).scrollTo('#content_description');
+        $('html, body').animate({
+            scrollTop: $("#content_description").offset().top
+        }, 1000);
       });
       return false;
   });
@@ -19,7 +21,9 @@ $(document).ready(function() {
       $('#content_contribute').slideUp('slow', function() {});
       $('#content_contact').slideUp('slow', function() {});
       $('#content_download').slideDown('slow', function() {
-        //~ $(document).scrollTo('#content_download');
+        $('html, body').animate({
+            scrollTop: $("#content_download").offset().top
+        }, 1000);
       });
       return false;
   });
@@ -31,7 +35,9 @@ $(document).ready(function() {
       $('#content_contribute').slideUp('slow', function() {});
       $('#content_contact').slideUp('slow', function() {});
       $('#content_multimedia').slideDown('slow', function() {
-        //~ $(document).scrollTo('#content_multimedia');
+        $('html, body').animate({
+            scrollTop: $("#content_multimedia").offset().top
+        }, 1000);
       });
       return false;
   });
@@ -43,7 +49,9 @@ $(document).ready(function() {
       $('#content_contribute').slideUp('slow', function() {});
       $('#content_contact').slideUp('slow', function() {});
       $('#content_tutorials').slideDown('slow', function() {
-        //~ $(document).scrollTo('#content_tutorials');
+        $('html, body').animate({
+            scrollTop: $("#content_tutorials").offset().top
+        }, 1000);
       });
       return false;
   });
@@ -55,7 +63,9 @@ $(document).ready(function() {
       $('#content_tutorials').slideUp('slow', function() {});
       $('#content_contact').slideUp('slow', function() {});
       $('#content_contribute').slideDown('slow', function() {
-        //~ $(document).scrollTo('#content_contribute');
+        $('html, body').animate({
+            scrollTop: $("#content_contribute").offset().top
+        }, 1000);
       });
       return false;
   });
@@ -67,7 +77,9 @@ $(document).ready(function() {
       $('#content_tutorials').slideUp('slow', function() {});
       $('#content_contribute').slideUp('slow', function() {});
       $('#content_contact').slideDown('slow', function() {
-        //~ $(document).scrollTo('#content_contact');
+        $('html, body').animate({
+            scrollTop: $("#content_contact").offset().top
+        }, 1000);
       });
       return false;
   });

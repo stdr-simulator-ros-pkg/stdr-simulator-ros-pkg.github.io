@@ -21,6 +21,7 @@ Released   : 20131203
   <link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
   
   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  
   <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
   <script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
   
@@ -48,7 +49,9 @@ Released   : 20131203
       </tr>
     </table>
     
-		<div class="content">
+		
+      
+      <div class="content">
     
       <div id="portfolio" class="container">
         <hr>
@@ -59,7 +62,9 @@ Released   : 20131203
                 <img src='images/logo.png'/ width='60px'>
               </span>
               <h3>What is STDR?</h3><br>
-              <p class='button-link'><a href='#' id='description_id'>General description</a></p>
+              <p class='button-link'>
+                  <a href='#content_description' id='description_id'>General description</a>
+              </p>
             </div>
           </div>
           <div class="column2">
@@ -110,23 +115,34 @@ Released   : 20131203
         </div>
       </div>
       
+      
+      
+<!--
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-->
+
+<!--
+      Hidden displays
+-->
       <div id="content_description" style="display:none">
         <div id="welcome" class="container">
           <div class="title">
             <h2>What is STDR Simulator?</h2><br>
-            <span class="byline">General Description</span> </div>
+            <span class="byline">General Description</span> 
+          </div>
           <div>
             <p style="text-align: justify;">
               Simple Two Dimentional Robot Simulator (STDR Simulator) is a 2-D multi-robot Unix simulator. Its goals are :
             </p>
             <h3 style="text-align: justify;">
-				Easy multi-robot 2-D simulation
-			</h3>
-			<br>
-			<p style="text-align: justify;"> STDR Simulator's goal is not to be the most realistic simulator, or the one with the most functionalities. Our intention is to make a single robot's, or a swarm's simulation as simple as possible, by minimizing the needed actions the researcher has to perform to start his/hers experiment. In addition, STDR can function with or without a graphical environment, which allows for experiments to take place even using ssh connections.</p>
+              Easy multi-robot 2-D simulation
+            </h3>
+            <br>
+            <p style="text-align: justify;"> STDR Simulator's goal is not to be the most realistic simulator, or the one with the most functionalities. Our intention is to make a single robot's, or a swarm's simulation as simple as possible, by minimizing the needed actions the researcher has to perform to start his/hers experiment. In addition, STDR can function with or without a graphical environment, which allows for experiments to take place even using ssh connections.</p>
 
-			<h3 style="text-align: justify;">
-				To be ROS compliant
+            <h3 style="text-align: justify;">
+              To be ROS compliant
             </h3>
             <br>
             <p style="text-align: justify;">STDR Simulator is created in way that makes it totally ROS compliant. Every robot and sensor emmits a ROS transformation (tf) and all the measurements are published in ROS topics. In that way, STDR uses all ROS adventages, aiming at easy usage with the world's most state-of-the-art robotic framework. The ROS compliance also suggests that the Graphical User Interface and the STDR Server can be executed in different machines, as well as that STDR can work together with ROS Rviz!</p>
@@ -180,22 +196,22 @@ Released   : 20131203
               Our tutorials cover the areas of setting up the STDR Simulator, using the console-only interface and using the STDR GUI. 
             </p>
             <ul  style="text-align: justify;">
-				<li style="text-align: justify;"><a href='' target="_blank">Set up STDR Simulator</a></li>
-				<li style="text-align: justify;">Use the command line</li>
-				<ul style="text-align: justify;">
-					<li style="text-align: justify;"><a href='' target="_blank">Basic usage (Start server, load a map, load a robot)</a></li>
-					<li style="text-align: justify;"><a href='' target="_blank">Delete a robot, move a robot</a></li>
-					<li style="text-align: justify;"><a href='' target="_blank">Aquire sensor measurements</a></li>
-					<li style="text-align: justify;"><a href='' target="_blank">Creating robots and sensors with yaml files</a></li>
-				</ul>
-				<li style="text-align: justify;">Use STDR GUI</li>
-				<ul style="text-align: justify;">
-					<li style="text-align: justify;"><a href='' target="_blank">Basic usage (Load a map, add a robot)</a></li>
-					<li style="text-align: justify;"><a href='' target="_blank">GUI toolbar</a></li>
-					<li style="text-align: justify;"><a href='' target="_blank">Robot right click functionalities</a></li>
-					<li style="text-align: justify;"><a href='' target="_blank">Visualizers and visualization status</a></li>
-					<li style="text-align: justify;"><a href='' target="_blank">Create a robot graphically</a></li>
-				</ul>
+        <li style="text-align: justify;"><a href='' target="_blank">Set up STDR Simulator</a></li>
+        <li style="text-align: justify;">Use the command line</li>
+        <ul style="text-align: justify;">
+          <li style="text-align: justify;"><a href='' target="_blank">Basic usage (Start server, load a map, load a robot)</a></li>
+          <li style="text-align: justify;"><a href='' target="_blank">Delete a robot, move a robot</a></li>
+          <li style="text-align: justify;"><a href='' target="_blank">Aquire sensor measurements</a></li>
+          <li style="text-align: justify;"><a href='' target="_blank">Creating robots and sensors with yaml files</a></li>
+        </ul>
+        <li style="text-align: justify;">Use STDR GUI</li>
+        <ul style="text-align: justify;">
+          <li style="text-align: justify;"><a href='' target="_blank">Basic usage (Load a map, add a robot)</a></li>
+          <li style="text-align: justify;"><a href='' target="_blank">GUI toolbar</a></li>
+          <li style="text-align: justify;"><a href='' target="_blank">Robot right click functionalities</a></li>
+          <li style="text-align: justify;"><a href='' target="_blank">Visualizers and visualization status</a></li>
+          <li style="text-align: justify;"><a href='' target="_blank">Create a robot graphically</a></li>
+        </ul>
             </ul>
           </div>
         </div>
@@ -211,7 +227,7 @@ Released   : 20131203
               As STDR Simulator is still at the 0.1 version, would would appreciate some help! So we encourage you to fork our code and help us improve it. Though we would prefer not to make any large extend changes, as the final code structure is going to change in the next release.  
             </p>
             <p style="text-align: justify;">
-			  It would be great if you provide us information about bugs and generally features you would like to see in STDR Simulator. Also you can help us enrich our robot and sensor yaml database	as well as provide us with more map files!
+        It would be great if you provide us information about bugs and generally features you would like to see in STDR Simulator. Also you can help us enrich our robot and sensor yaml database	as well as provide us with more map files!
             </p>
             <p style="text-align: justify;">The bug tracker of STDR Simulator is located here : <a href='https://github.com/stdr-simulator-ros-pkg/stdr_simulator/issues?direction=desc&labels=&page=1&sort=updated&state=open' target="_blank">https://github.com/stdr-simulator-ros-pkg/stdr_simulator/issues</a></p>
             <p  style="text-align: justify;">You can fork our git repository here: <a href='https://github.com/stdr-simulator-ros-pkg/stdr_simulator/fork' target="_blank">https://github.com/stdr-simulator-ros-pkg/stdr_simulator/fork</a></p>
@@ -231,6 +247,9 @@ Released   : 20131203
           </div>
         </div>
       </div>
+      
+
+
     </div>
 	</div>
 </div>
