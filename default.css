@@ -26,11 +26,13 @@
 		margin-top: 0;
 	}
 	
+/*
 	ol, ul
 	{
 		padding: 0;
 		list-style: none;
 	}
+*/
 	
 	p
 	{
@@ -734,7 +736,7 @@
     padding: 10px 15px;
     color: #888;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
-    border-radius: 4px;
+    border-radius: 10px;
     -webkit-transition-duration: 0.4s;
     -moz-transition-duration: 0.4s;
     transition-duration: 0.4s;
@@ -757,4 +759,14 @@
     color: rgba(255,255,255,0.75);
     text-decoration: none
   }
+  
+  .code-block {
+    padding: 10px 15px;
+    color: #aaa;
+    background: #222222;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    text-align : left
+  }
+
 

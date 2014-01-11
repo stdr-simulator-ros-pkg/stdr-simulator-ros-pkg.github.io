@@ -115,13 +115,19 @@ Released   : 20131203
             <span class="byline">General Description</span> </div>
           <div>
             <p style="text-align: justify;">
-              Simple Two Dimentional Robot Simulator (STDR Simulator) is a multi-robot simulator. Its goals are :
+              Simple Two Dimentional Robot Simulator (STDR Simulator) is a 2-D multi-robot Unix simulator. Its goals are :
             </p>
-            <ul style="text-align: justify;">
-              <li>- To simulate easily a single robot or a swarm in a 2D environment</li>
-              <li>- To be totally parameterizable</li>
-              <li>- To be ROS compliant.</li>
-            </ul>
+            <h3 style="text-align: justify;">
+				Easy multi-robot 2-D simulation
+			</h3>
+			<br>
+			<p style="text-align: justify;"> STDR Simulator's goal is not to be the most realistic simulator, or the one with the most functionalities. Our intention is to make a single robot's, or a swarm's simulation as simple as possible, by minimizing the needed actions the researcher has to perform to start his/hers experiment. In addition, STDR can function with or without a graphical environment, which allows for experiments to take place even using ssh connections.</p>
+
+			<h3 style="text-align: justify;">
+				To be ROS compliant
+            </h3>
+            <br>
+            <p style="text-align: justify;">STDR Simulator is created in way that makes it totally ROS compliant. Every robot and sensor emmits a ROS transformation (tf) and all the measurements are published in ROS topics. In that way, STDR uses all ROS adventages, aiming at easy usage with the world's most state-of-the-art robotic framework. The ROS compliance also suggests that the Graphical User Interface and the STDR Server can be executed in different machines, as well as that STDR can work together with ROS Rviz!</p>
           </div>
         </div>
       </div>
@@ -133,8 +139,11 @@ Released   : 20131203
             <span class="byline">Ways to get STDR Simulator</span> </div>
           <div class="content">
             <p style="text-align: justify;">
-              Under construction...
+              There is currently one way to get STDR Simulator and that is by a Github repository. The STDR Github page is <a href='https://github.com/stdr-simulator-ros-pkg/stdr_simulator' target="_blank">https://github.com/stdr-simulator-ros-pkg/stdr_simulator</a>. To clone the repository execute the following command:
             </p>
+            <p class='code-block'>git clone https://github.com/stdr-simulator-ros-pkg/stdr_simulator.git</p>
+            <p style="text-align: justify;">To start using STDR please check the Tutorials section.</p>
+            <p style="text-align: justify;">We are in the process of creating the apt-get packages, so they will be available soon.</p>
           </div>
         </div>
       </div>
@@ -145,9 +154,35 @@ Released   : 20131203
             <h2>What does it look like?</h2><br>
             <span class="byline">Multimedia</span> </div>
           <div class="content">
-            <p style="text-align: justify;">
-              Under construction...
-            </p>
+            <h3 style="text-align: justify;">
+              STDR GUI with a loaded map
+            </h3><br>
+            <img src='images/img1.png' width='600px' border='1'/>
+            <br><br>
+            <h3 style="text-align: justify;">
+              STDR GUI with one loaded robot, equipped with a laser and five sonar sensors
+            </h3><br>
+            <img src='images/img2.png' width='600px' border='1'/>
+            <br><br>
+            <h3 style="text-align: justify;">
+              Screenshot of the STDR GUI robot creator
+            </h3><br>
+            <img src='images/img3.png' width='600px' border='1'/>
+            <br><br>
+            <h3 style="text-align: justify;">
+              Zoom in to a single robot, showcasing proximity circles and grid existance
+            </h3><br>
+            <img src='images/img4.png' width='600px' border='1'/>
+            <br><br>
+            <h3 style="text-align: justify;">
+              Robot and sensors topic visualization
+            </h3><br>
+            <img src='images/img5.png' width='600px' border='1'/>
+            <br><br>
+            <h3 style="text-align: justify;">
+              Two robots spawned with different visualization status
+            </h3><br>
+            <img src='images/img6.png' width='600px' border='1'/>
           </div>
         </div>
       </div>
@@ -159,8 +194,26 @@ Released   : 20131203
             <span class="byline">Tutorials</span> </div>
           <div class="content">
             <p style="text-align: justify;">
-              Under construction...
+              Our tutorials cover the areas of setting up the STDR Simulator, using the console-only interface and using the STDR GUI. 
             </p>
+            <ul  style="text-align: justify;">
+				<li style="text-align: justify;"><a href='' target="_blank">Set up STDR Simulator</a></li>
+				<li style="text-align: justify;">Use the command line</li>
+				<ul style="text-align: justify;">
+					<li style="text-align: justify;"><a href='' target="_blank">Basic usage (Start server, load a map, load a robot)</a></li>
+					<li style="text-align: justify;"><a href='' target="_blank">Delete a robot, move a robot</a></li>
+					<li style="text-align: justify;"><a href='' target="_blank">Aquire sensor measurements</a></li>
+					<li style="text-align: justify;"><a href='' target="_blank">Creating robots and sensors with yaml files</a></li>
+				</ul>
+				<li style="text-align: justify;">Use STDR GUI</li>
+				<ul style="text-align: justify;">
+					<li style="text-align: justify;"><a href='' target="_blank">Basic usage (Load a map, add a robot)</a></li>
+					<li style="text-align: justify;"><a href='' target="_blank">GUI toolbar</a></li>
+					<li style="text-align: justify;"><a href='' target="_blank">Robot right click functionalities</a></li>
+					<li style="text-align: justify;"><a href='' target="_blank">Visualizers and visualization status</a></li>
+					<li style="text-align: justify;"><a href='' target="_blank">Create a robot graphically</a></li>
+				</ul>
+            </ul>
           </div>
         </div>
       </div>
@@ -172,8 +225,13 @@ Released   : 20131203
             <span class="byline">Ways to contribute</span> </div>
           <div class="content">
             <p style="text-align: justify;">
-              Under construction...
+              As STDR Simulator is still at the 0.1 version, would would appreciate some help! So we encourage you to fork our code and help us improve it. Though we would prefer not to make any large extend changes, as the final code structure is going to change in the next release.  
             </p>
+            <p style="text-align: justify;">
+			  It would be great if you provide us information about bugs and generally features you would like to see in STDR Simulator. Also you can help us enrich our robot and sensor yaml database	as well as provide us with more map files!
+            </p>
+            <p style="text-align: justify;">The bug tracker of STDR Simulator is located here : <a href='https://github.com/stdr-simulator-ros-pkg/stdr_simulator/issues?direction=desc&labels=&page=1&sort=updated&state=open' target="_blank">https://github.com/stdr-simulator-ros-pkg/stdr_simulator/issues</a></p>
+            <p  style="text-align: justify;">You can fork our git repository here: <a href='https://github.com/stdr-simulator-ros-pkg/stdr_simulator/fork' target="_blank">https://github.com/stdr-simulator-ros-pkg/stdr_simulator/fork</a></p>
           </div>
         </div>
       </div>
@@ -185,7 +243,7 @@ Released   : 20131203
             <span class="byline">Contact information</span> </div>
           <div class="content">
             <p style="text-align: justify;">
-              Under construction...
+              Our e-mail is stdr.simulator [at] gmail [dot] com. We also have a google group, so if you're interested in participating more actively, please send us an e-mail to let you in! Looking forward to hear from you :) 
             </p>
           </div>
         </div>
